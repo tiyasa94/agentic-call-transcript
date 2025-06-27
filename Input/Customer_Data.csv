@@ -1,0 +1,11 @@
+customer_id,tenure_months,contract_type,plan_type,payment_method,avg_monthly_spend,total_interactions,unresolved_issues,recent_outage_count,loyalty_tier,Country,State,City
+CUST_101,8,Monthly,Premium,Credit Card,$85.00,12,3,2,Silver,India,Maharashtra,Mumbai
+CUST_102,24,Annual,Business,Bank Transfer,$120.00,8,2,1,Gold,India,Karnataka,Bengaluru
+CUST_103,5,Monthly,Basic,Debit Card,$45.00,15,5,0,Bronze,India,Delhi,New Delhi
+CUST_104,18,Monthly,Family,Auto-Pay,$65.00,20,6,3,Silver,India,Maharashtra,Mumbai
+CUST_105,36,Annual,Premium,Credit Card,$95.00,25,7,4,Gold,India,Karnataka,Bengaluru
+CUST_106,12,Monthly,Standard,PayPal,$55.00,10,1,1,Bronze,India,Delhi,New Delhi
+CUST_107,9,Monthly,Basic,Debit Card,$40.00,18,4,2,Silver,India,West Bengal,Kolkata
+CUST_108,30,Annual,Business,Bank Transfer,$150.00,5,0,0,Platinum,India,Telangana,Hyderabad
+CUST_109,6,Monthly,Standard,Credit Card,$50.00,22,8,5,Bronze,India,Telangana,Hyderabad
+CUST_110,48,Annual,Premium,Auto-Pay,$110.00,30,10,6,Gold,India,West Bengal,Kolkata

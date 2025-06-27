@@ -1,0 +1,51 @@
+churn_prediction_task:
+  description: >
+    Predict customer churn risk by analyzing emotional, behavioral, and contextual signals derived from call transcripts and root cause insights.
+    
+    ### **Input:**
+    - Current call transcript: {call_transcript}
+    - Sentiment & tone analysis output: {sentiment_agent_output}
+    - Customer profile: {customer_profile}
+    - Root cause findings: {root_cause_output}
+    
+    ### **Expected Output:**
+    - JSON object containing:
+      - 'churn_risk_score': [Float between 0 and 1 indicating likelihood of churn]
+      - 'churn_risk_label': [Categorical risk level: Low, Medium, High]
+      - 'explanation': [Reasoning behind the churn score based on components in bullet points. Make the points short, crisp, and to the point.]
+
+    -Expected Output Format (JSON):
+      ```json
+      {{
+        "churn_risk_score": "<0-1, indicating likelihood of churn>",
+        "churn_risk_label": "<select any one ('Low', 'Medium', 'High')>",
+        "explanation": ["reason1", "reason2"]
+      }}
+      ```
+
+    ### **Risk Scoring Formula:**
+    Use the following scoring logic to compute churn risk:
+    ```
+    churn_risk_score = 
+        0.35 * sentiment_score_component +
+        0.30 * root_cause_severity_component +
+        0.20 * tenure_component +
+        0.15 * unresolved_issues_component
+    ```
+
+    ### **Component Definitions:**
+    - **sentiment_score_component:** 1 if sentiment is 'negative', 0.5 if 'neutral', 0 if 'positive'.
+    - **root_cause_severity_component:** 1 if recurring technical/service issues are found; 0.5 for one-time issue; 0 if no issue.
+    - **tenure_component:** Use (1 - min(tenure_months / 24, 1)) → customers with shorter tenure are more likely to churn.
+    - **unresolved_issues_component:** Normalize as unresolved_issues / max_possible_issues (e.g., 5), capped at 1.
+
+    ### **Label Classification Logic:**
+    - If churn_risk_score < 0.4 → 'Low'
+    - If 0.4 ≤ churn_risk_score < 0.7 → 'Medium'
+    - If churn_risk_score ≥ 0.7 → 'High'
+
+    ### **Usage:**
+    Enables proactive identification of at-risk customers and informs downstream agents (like retention strategy) to mitigate churn with targeted interventions. This score ensures explainability through decomposable logic and transparency for business alignment.
+  expected_output: >
+    A JSON object with 'churn_risk_score', 'churn_risk_label', 'explanation'.
+  agent: churn_prediction_agent

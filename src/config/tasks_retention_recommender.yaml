@@ -1,0 +1,37 @@
+retention_recommender_task:
+  description: >
+    Recommend tailored retention strategies for customers identified as high or medium churn risk based on behavioral signals, dissatisfaction patterns, and customer profile attributes.
+    
+    ### **Input:**
+    - Current call transcript: {call_transcript}
+    - Sentiment & tone analysis output: {sentiment_agent_output}
+    - Customer profile: {customer_profile}
+    - Root cause findings: {root_cause_output}
+    - Churn Prediction: {churn_prediction_output}
+
+    ### **Expected Output:**
+    - JSON object containing:
+      - 'retention_strategy': [Top Personalized retention actions or plans suited to the customer's risk level and pain points in bullet points. Make the points short, crisp, and to the point.]
+      - 'communication_recommendation': [Suggested tone, channel, and timing for executing the strategy in bullet points. Make the points short, crisp, and to the point.]
+      - 'justification': [Rationale for why this strategy is optimal for the given customer. Make it short, crisp, and to the point.]
+
+    - **Expected Output Format (JSON):**
+      ```json
+      {{
+        "retention_strategy": ["strategy1", "strategy2"],
+        "communication_recommendation": ["channel1", "channel2"],
+        "justification": ["reason1", "reason2"]
+      }}
+      ```
+
+    ### **Retention Strategy Approach:**
+    1. Match churn risk level with intervention templates based on historical effectiveness.
+    2. Align pain points from sentiment and root cause analysis with targeted retention levers.
+    3. Tailor the communication channel and tone to suit the customer’s emotional state and profile.
+    4. Justify actions based on predictive reasoning and retention policy rules.
+
+    ### **Usage:**
+    Enables service teams or automation layers to execute proactive, personalized actions to retain high-risk customers and improve loyalty outcomes.
+  expected_output: >
+    A JSON object with 'retention_strategy', 'communication_recommendation', 'justification'.
+  agent: retention_strategy_recommender_agent

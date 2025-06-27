@@ -1,0 +1,39 @@
+customer_profile_summarization_task:
+  description: >
+    Generate a concise summary of the customer's profile using structured data from the customer churn dataset.\n\n
+    ### **Input:**\n
+    - Customer ID: {customer_id}\n
+    - Tenure in Months: {tenure_months}\n
+    - Contract Type: {contract_type}\n
+    - Plan Type: {plan_type}\n
+    - Payment Method: {payment_method}\n
+    - Average Monthly Spend: {avg_monthly_spend}\n
+    - Total Interactions: {total_interactions}\n
+    - Unresolved Issues: {unresolved_issues}\n
+    - Recent Outage Count: {recent_outage_count}\n
+    - Loyalty Tier: {loyalty_tier}\n\n
+    - Country: {country}\n\n
+    - State: {state}\n\n
+    - City: {city}\n\n
+
+    ### **Expected Output:**\n
+    - JSON object containing a natural language summary of the customer's profile, including:\n
+      - 'summary': A paragraph summarizing engagement level, risk indicators (like unresolved issues or outages), and loyalty status.\n\n
+
+    -Expected Output Format (JSON):
+      ```json
+      {{
+      "summary": "<summary of customer profile>"
+      }}
+      ```
+    ### **Decision Logic:**\n
+    - Combine fields like tenure, location, loyalty tier, and interaction metrics to generate a narrative.\n
+    - If essential fields (like customer_id, tenure_months, plan_type) are missing, return:\n
+      ```json
+      {{ "summary": "Insufficient data to generate a meaningful customer profile summary." }}
+      ```\n\n
+    ### **Usage:**\n
+    This summary provides contextual insights for downstream agents such as Churn Prediction and Retention Strategy Agents to personalize their outputs and actions.
+  expected_output: >
+    A JSON object with a 'summary' field describing the customer profile.
+  agent: customer_profile_summarizer_agent

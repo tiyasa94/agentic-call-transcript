@@ -1,0 +1,32 @@
+
+root_cause_analysis_task:
+  description: >
+    Analyze negative customer interactions to identify the underlying causes of dissatisfaction using current and historical conversation patterns.
+    
+    ### **Input:**
+    - Current call transcript: {call_transcript}\n
+    - Sentiment & tone analysis output: {sentiment_agent_output}\n
+    - Customer profile: {customer_profile}\n\n
+    ### **Expected Output:**
+    - JSON object containing:
+      - 'root_cause': [Top 3 or 5 Root causes and systemic triggers in bullet points identified through comparison with similar past cases. Make the points short, crisp, and to the point.]
+    
+    - **Output Format:**
+      ```json
+      {{
+      "root_cause": ["reason 1", "reason 2"],
+   
+      }}
+      ```
+    
+    ### **Root Cause Analysis Approach:**
+    1. Cross-reference current issues with historical transcripts involving similar patterns.
+    2. Isolate systemic problems or procedural gaps from previous escalations.
+    3. Identify linguistic markers and escalation triggers commonly associated with dissatisfaction.
+    4. Apply customer profile context to personalize the diagnosis.
+    
+    ### **Usage:**
+    Enables in-depth understanding of dissatisfaction triggers, churn prediction, helping improve service design, training, and operational workflows.
+  expected_output: >
+    A JSON object with 'root_cause'.
+  agent: root_cause_analysis_agent

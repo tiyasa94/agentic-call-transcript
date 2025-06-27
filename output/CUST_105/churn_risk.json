@@ -1,0 +1,10 @@
+{
+  "churn_risk_score": 0.8,
+  "churn_risk_label": "High",
+  "explanation": [
+    "Negative sentiment expressed by the customer",
+    "Recurring technical and service issues without timely resolution",
+    "History of unresolved issues despite long tenure",
+    "Explicit threat of leaving the service if issues are not addressed"
+  ]
+}

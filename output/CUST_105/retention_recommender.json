@@ -1,0 +1,21 @@
+{
+  "retention_strategy": [
+    "Immediate escalation and resolution of missing hotspot data issue",
+    "Provision of a reliable service guarantee with clear timelines for resolution",
+    "Offer of a significant one-time courtesy credit or permanent plan upgrade",
+    "Personalized technical support with a dedicated agent for future issues",
+    "Regular follow-up interactions to ensure issue resolution and customer satisfaction"
+  ],
+  "communication_recommendation": [
+    "Initial contact via phone within the next 2 hours to acknowledge the customer's frustration and provide a clear plan of action",
+    "Follow-up interactions via the customer's preferred channel (email or phone) at weekly intervals to monitor progress and satisfaction",
+    "Empathetic and apologetic tone in all communications, with a focus on solving the customer's problems and preventing future issues",
+    "Utilization of the customer's loyalty tier (Gold) and tenure (36 months) to offer personalized and privileged support"
+  ],
+  "justification": [
+    "The customer's high churn risk score (0.8) and explicit threat to leave the service necessitate immediate and effective intervention",
+    "The root cause analysis highlights systemic flaws in technical support and service reliability, requiring comprehensive and personalized retention actions",
+    "The customer's negative sentiment, frustration, and history of unresolved issues despite long tenure justify a proactive and empathetic approach to communication and issue resolution",
+    "Historical effectiveness of intervention templates for similar high-risk customers with premium plans and long tenure supports the adoption of this multi-faceted retention strategy"
+  ]
+}

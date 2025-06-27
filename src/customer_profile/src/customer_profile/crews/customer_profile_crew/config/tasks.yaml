@@ -1,0 +1,38 @@
+profile_task:
+  description: >
+    Generate a JSON-formatted customer profile from historical transcripts.\n\n"
+    ### **Input:**\n"
+    - Customer transcripts: {TRANSCRIPTS}\n"
+    - Previous customer profile (if any): {CUSTOMER_PROFILE}\n"
+    - Previous feedback (if any): {FEEDBACK}\n\n"
+    ### **Expected Output:**\n"
+    - JSON with extracted insights (customer name, issue summary, technician visits, etc.).\n"
+    Key Insights to Extract:
+        - `"customer_name"`: Extract the customer's or company's name if available; otherwise, return `"Unknown"`.  
+        - `"recent_issues_summary"`: Summarize the most recent issues faced by the customer in a comprehensive, detailed and analytical way.  
+        - `"technical_proficiency"`: Determine the customer's technical proficiency based on the conversation between the agent and the customer in the call history:  
+        - `"High"`: Customer understands technical terms and can follow troubleshooting steps independently.  
+        - `"Medium"`: Customer has some understanding but needs moderate guidance from the agent.  
+        - `"Low"`: Customer struggles with basic troubleshooting and requires extensive assistance.  
+        - `"issue_count_summary"`: Mention each issue and count how many calls(count of calls) were made for each issue and mention the duration of the issue(in days or months, if its mentioned in the call history). Count the number of calls according to the timestamps provided. Give a list of issues with call counts and duration.
+        - `"suffering_period"`: The total period the customer has been experiencing the recurring issues (in days or months).  
+        - `"recent_technician_visit"`: `"Yes"` if a technician visit occurred; otherwise, return `"No Technician Visits"`.  
+        - `"recent_technician_visit"`: `"Yes"` if a technician visit occurred; otherwise, return `"No Technician Visits"`.  
+        - `"last_visit_date"`: If a technician visit has occurred, extract the most recent visit date in `mm/dd/yyyy` format. If the visit date is mentioned in a relative format (e.g., "Last Wednesday," "Two weeks ago"), calculate the actual date based on the reference timestamp and convert it to `mm/dd/yyyy`. The visit date must be in the past relative to the call date.  
+        - `"last_visit_issue"`: If a technician visit has occurred, extract the exact issue that led to the visit. No `"N/A"` values should be returned if a visit happened.  
+        - `"last_visit_reason"`: If a technician visit has occurred, extract the reason for the visit. No `"N/A"` values should be returned if a visit happened.
+    - If a previous profile exists, refine it based on the provided feedback instead of regenerating from scratch.
+  expected_output: >
+    A structured JSON customer profile with profile_task as key.
+  agent: profile_generator
+
+evaluation_task:
+  description: >
+    Evaluate the quality of the generated customer profile.\n\n
+    ### **Input:**\n
+    - Generated customer profile: fetch the output from profile_generator agent response\n\n
+    ### **Expected Output:**\n
+    - JSON object with 'score' (0-10) and 'feedback' highlighting missing details.
+  expected_output: >
+    A structured JSON customer profile with profile_task as key.
+  agent: profile_evaluator

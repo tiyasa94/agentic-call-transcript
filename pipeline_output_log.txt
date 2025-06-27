@@ -1,0 +1,684 @@
+
+============================================================
+2025-04-04 13:30:12.037369 | Input - Call Transcript
+============================================================
+2024-05-01 09:00:00: Hello, thank you for your help today. I really appreciate it.
+    My receiver wasn’t working earlier but it's back now. Your previous instructions worked great.
+    Thanks again, have a great day!
+
+
+============================================================
+2025-04-04 13:30:12.037457 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:30:14.810500 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "positive",
+  "tone": "satisfied",
+  "sentiment_score": 0.8
+}
+
+
+============================================================
+2025-04-04 13:30:14.810593 | Pipeline Decision
+============================================================
+Sentiment is positive. No further action taken.
+
+
+============================================================
+2025-04-04 13:30:14.810654 | Input - Call Transcript
+============================================================
+2024-05-01 07:45:00: Hi, I’m calling to ask for a refresh signal to my receiver.
+    My name is Brian and my account is StarLink Media. I’ve had this issue before.
+    Can you please check it again? Thanks.
+
+
+============================================================
+2025-04-04 13:30:14.810691 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:30:16.214130 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "neutral",
+  "tone": "calm",
+  "sentiment_score": 0.2
+}
+
+
+============================================================
+2025-04-04 13:30:16.214263 | Pipeline Decision
+============================================================
+Sentiment is neutral. Going directly to retention strategy.
+
+
+============================================================
+2025-04-04 13:30:20.709422 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Proactive Technical Support and Account Review",
+  "communication_recommendation": "Personalized phone call within the next 24 hours, with a empathetic and solution-focused tone",
+  "justification": "The customer, Brian from StarLink Media, has expressed frustration with repeated issues and difficulties in the support process. Given his neutral sentiment and calm tone, a proactive and personalized approach can address his pain points effectively. By offering proactive technical support and an account review, we can streamline his support experience, potentially resolving current and preventing future issues. This strategy is optimal because it directly addresses the root causes of his dissatisfaction, aligns with historical effectiveness in similar cases, and is tailored to his emotional state and profile. Furthermore, a prompt and empathetic communication channel will reinforce our commitment to his satisfaction and retention."
+}
+
+
+============================================================
+2025-04-04 13:30:20.710244 | Input - Call Transcript
+============================================================
+2024-05-01 06:34:30: Sighs “Thank you so much for your patience… I guess. Oh, I'm sorry. I'm still here. Have a good day—wait, what? Ugh, fine. Hey, I'm here.”
+    Hi. Yes. My name is Ellen. I do apologize for the wait. How may I assist you today?
+    "Finally! I’ve been waiting forever. This service is ridiculously slow. My receiver isn’t working, and I need a refresh signal—again. This keeps happening!"
+    Hello? Are you still there?
+    "Yes, obviously. Can we just fix this already?"
+    Okay. Hello. My name is Eileen. And how may I help you?
+    "I just told you! I need a refresh signal. Do you guys even listen?"
+    I've got you. Um, I've just got to make sure that I got the right account in front of me. May I have the name on the account or the business name on the account?
+    "Dallas Wind Drilling. Seriously, I don’t have all day for this."
+    Alright. I've got to get you to the correct department because I don't have access to your account since it's a commercial account. If you'll bear with me, I'll get you right over to that department, okay?"
+    "What?! I waited all this time just for you to tell me you can’t help me? Unbelievable. This is exactly why I hate calling customer service."
+    "Whatever. Just transfer me already."
+    "They'll be right with you momentarily. Have a great day. Bye-bye."
+    
+
+
+============================================================
+2025-04-04 13:30:20.710491 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:30:22.160151 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry, frustrated",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-04 13:30:28.145269 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "Inefficient support processes, lack of streamlined account verification, and inadequate access to relevant support departments contribute to the customer's frustration. Historical patterns indicate recurring issues with receiver equipment, lost connections, and the need for refresh signals, suggesting a potential systemic flaw in the product or service design. Procedural gaps, such as the inability of the initial customer service representative to assist with commercial accounts, exacerbate the problem. The customer's prior experiences with difficulties in verifying account information and accessing necessary support also point to a need for improved process design and training for customer service representatives.",
+  "real_time_guidance": "Agents should be empowered to handle commercial accounts or have a more efficient transfer process to relevant departments. Providing clear explanations for the need to transfer calls and apologizing for the inconvenience can help mitigate frustration. Agents should also be trained to recognize linguistic markers of dissatisfaction, such as expressions of frustration with wait times or previous unresolved issues, and respond with empathy and proactive solutions. Additionally, considering the customer's history of issues with receiver equipment, agents could offer proactive troubleshooting steps or facilitate a more straightforward process for equipment upgrades or replacements, demonstrating a customer-centric approach and potentially resolving the issue more efficiently."
+}
+
+
+============================================================
+2025-04-04 13:30:33.453543 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.85,
+  "churn_risk_label": "High",
+  "explanation": "The customer's recent interaction exhibits a strong negative sentiment and tone, with a sentiment score of -0.8, indicating intense frustration and anger. The root cause findings highlight recurring issues with the receiver equipment, lost connections, and the need for refresh signals, suggesting a systemic flaw in the product or service design. Furthermore, procedural gaps in the support process, such as the inability of the initial customer service representative to assist with commercial accounts, have exacerbated the problem. The customer's prior experiences with difficulties in verifying account information and accessing necessary support also point to a need for improved process design and training for customer service representatives. Given the customer's history of issues and the emotional volatility displayed in the current call transcript, there is a high likelihood of churn. The churn risk score of 0.85 reflects the cumulative effect of these factors, warranting proactive intervention to mitigate the risk of customer churn."
+}
+
+
+============================================================
+2025-04-04 13:30:40.494305 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Personalized technical support and equipment upgrade offer, including a dedicated commercial account specialist for streamlined issue resolution and a complimentary upgrade to a more reliable receiver model. Additionally, provide a loyalty reward of a 10% discount on the next billing cycle for continued service.",
+  "communication_recommendation": "Execute the strategy via a personalized call from a senior customer service representative within 24 hours of the current interaction, ensuring empathy and understanding in tone. The call should acknowledge the customer's frustration, apologize for the inconvenience, and clearly outline the retention offer and its benefits. Follow-up with a tailored email summarizing the discussion and offer details, ensuring the customer has a reference point for future interactions.",
+  "justification": "This strategy is optimal because it directly addresses the customer's pain points, including the need for efficient technical support and reliable equipment. The provision of a dedicated commercial account specialist streamlines the support process, reducing the likelihood of future frustration. The equipment upgrade offer not only aims to prevent recurring issues but also demonstrates a commitment to the customer's satisfaction and long-term relationship. The loyalty reward incentivizes continued service, offsetting the churn risk. The personalized and empathetic communication approach acknowledges the customer's emotional state, fostering trust and enhancing the retention effort's effectiveness. Historically, similar interventions have shown a significant reduction in churn risk for customers with comparable profiles and sentiment analysis outputs, supporting the predictive reasoning behind this tailored retention strategy."
+}
+
+
+============================================================
+2025-04-04 13:31:24.011931 | Input - Call Transcript
+============================================================
+2024-05-01 09:00:00: Hello, thank you for your help today. I really appreciate it.
+    My receiver wasn’t working earlier but it's back now. Your previous instructions worked great.
+    Thanks again, have a great day!
+
+
+============================================================
+2025-04-04 13:31:24.012290 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:31:26.678763 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "positive",
+  "tone": "satisfied",
+  "sentiment_score": 0.8
+}
+
+
+============================================================
+2025-04-04 13:31:26.678901 | Pipeline Decision
+============================================================
+Sentiment is positive. No further action taken.
+
+
+============================================================
+2025-04-04 13:32:17.017821 | Input - Call Transcript
+============================================================
+2024-05-01 09:00:00: Hello, thank you for your help today. I really appreciate it.
+    My receiver wasn’t working earlier but it's back now. Your previous instructions worked great.
+    Thanks again, have a great day!
+
+
+============================================================
+2025-04-04 13:32:17.018184 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:32:19.732786 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "positive",
+  "tone": "satisfied",
+  "sentiment_score": 0.8
+}
+
+
+============================================================
+2025-04-04 13:32:19.733003 | Pipeline Decision
+============================================================
+Sentiment is positive. No further action taken.
+
+
+============================================================
+2025-04-04 13:32:47.070567 | Input - Call Transcript
+============================================================
+2024-05-01 07:45:00: Hi, I’m calling to ask for a refresh signal to my receiver.
+    My name is Brian and my account is StarLink Media. I’ve had this issue before.
+    Can you please check it again? Thanks.
+
+
+============================================================
+2025-04-04 13:32:47.070723 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:32:49.481789 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "neutral",
+  "tone": "calm",
+  "sentiment_score": 0.2
+}
+
+
+============================================================
+2025-04-04 13:32:49.481946 | Pipeline Decision
+============================================================
+Sentiment is neutral. Going directly to retention strategy.
+
+
+============================================================
+2025-04-04 13:32:54.318548 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Proactive Technical Support and Equipment Upgrade Offer",
+  "communication_recommendation": "Personalized phone call within the next 24 hours, tone empathetic and solution-focused",
+  "justification": "The customer's history of repeat issues with their receiver, such as lost connections and the need for refresh signals, indicates a medium to high churn risk. The sentiment analysis shows a neutral sentiment but the context suggests underlying frustration. The root cause findings highlight difficulties in verifying account information and accessing necessary support, pointing to a need for streamlined and efficient support processes. Therefore, offering proactive technical support to resolve the current issue and an equipment upgrade offer to prevent future occurrences is likely to strengthen the customer relationship and mitigate churn risk. A personalized phone call allows for a tailored approach, addressing the customer's specific pain points and providing a human touch, which is crucial in situations where the customer has expressed frustration with the support process."
+}
+
+
+============================================================
+2025-04-04 13:36:15.733203 | Input - Call Transcript
+============================================================
+2024-05-01 06:34:30: Sighs “Thank you so much for your patience… I guess. Oh, I'm sorry. I'm still here. Have a good day—wait, what? Ugh, fine. Hey, I'm here.”
+    Hi. Yes. My name is Ellen. I do apologize for the wait. How may I assist you today?
+    "Finally! I’ve been waiting forever. This service is ridiculously slow. My receiver isn’t working, and I need a refresh signal—again. This keeps happening!"
+    Hello? Are you still there?
+    "Yes, obviously. Can we just fix this already?"
+    Okay. Hello. My name is Eileen. And how may I help you?
+    "I just told you! I need a refresh signal. Do you guys even listen?"
+    I've got you. Um, I've just got to make sure that I got the right account in front of me. May I have the name on the account or the business name on the account?
+    "Dallas Wind Drilling. Seriously, I don’t have all day for this."
+    Alright. I've got to get you to the correct department because I don't have access to your account since it's a commercial account. If you'll bear with me, I'll get you right over to that department, okay?"
+    "What?! I waited all this time just for you to tell me you can’t help me? Unbelievable. This is exactly why I hate calling customer service."
+    "Whatever. Just transfer me already."
+    "They'll be right with you momentarily. Have a great day. Bye-bye."
+    # 
+
+
+============================================================
+2025-04-04 13:36:15.733425 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-04 13:36:18.980156 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-04 13:36:24.691415 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "Inefficient support processes, lack of streamlined account access, and repetitive issues with the receiver requiring frequent refresh signals. Systemic flaws include the need for customers to repeatedly verify their account information and the inability of customer service representatives to immediately assist with commercial accounts. Procedural gaps involve the lack of a direct escalation process for known issues and the failure to proactively offer solutions such as equipment upgrades or replacements.",
+  "real_time_guidance": "Agents should be empowered to immediately recognize and flag commercial accounts for expedited handling. Implementing a system for agents to access customer issue histories could help in providing personalized support and reducing the need for repetitive troubleshooting steps. Real-time guidance for agents includes: (1) acknowledged customer frustration and empathize with their experience, (2) provide clear explanations for the need to transfer calls to specialized departments, (3) offer proactive solutions such as scheduling a follow-up for equipment assessment or directly connecting customers with local retailers for potential upgrades, and (4) ensure that all interactions are logged and accessible for future reference to prevent repetition of issues and to improve the overall customer experience."
+}
+
+
+============================================================
+2025-04-04 13:36:29.284386 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.85,
+  "churn_risk_label": "High",
+  "explanation": "The customer's recent interaction exhibits a strongly negative sentiment and tone, with a sentiment score of -0.8, indicating intense frustration and anger. The root cause findings highlight systemic flaws in the support process, including inefficient account access and repetitive issues with the receiver, which have led to a history of difficulties in resolving issues. The customer's account type (commercial) and interaction history, marked by repeated problems and unfulfilling support experiences, further contribute to the elevated churn risk. Given these factors and the predictive thresholds applied, the customer is classified as being at high risk of churn, necessitating immediate and targeted intervention to address their concerns and improve their overall experience."
+}
+
+
+============================================================
+2025-04-04 13:36:37.095195 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Proactive Technical Support and Account Management Offer",
+  "communication_recommendation": "Personalized phone call within 24 hours, followed by a dedicated email with a comprehensive support plan and a named account manager for ongoing support",
+  "justification": "The customer's high churn risk score of 0.85, coupled with their recent negative experience and history of difficulties with receiver issues, necessitates a multi-faceted approach. By offering proactive technical support, including expedited troubleshooting and resolution of the current receiver issue, as well as providing a named account manager for streamlined and efficient support, we can directly address the customer's pain points. The dedicated account manager will also facilitate access to necessary support processes, potentially including equipment upgrades or replacements, thus mitigating systemic flaws and procedural gaps identified in the root cause analysis. Furthermore, recognizing the customer's frustration and anger, a personalized and empathetic communication approach is crucial. A phone call allows for real-time interaction and empathy, while a follow-up email provides a tangible plan and contact, underscoring our commitment to improving their experience. This strategy aligns with historical effectiveness in retaining high-risk customers by addressing both immediate issues and underlying systemic problems, thereby justifying the proactive and personalized retention actions as optimal for this customer's situation."
+}
+
+
+============================================================
+2025-04-21 11:33:49.295874 | Input - Call Transcript
+============================================================
+2024-05-01 06:34:30: Sighs “Thank you so much for your patience… I guess. Oh, I'm sorry. I'm still here. Have a good day—wait, what? Ugh, fine. Hey, I'm here.”
+    Hi. Yes. My name is Ellen. I do apologize for the wait. How may I assist you today?
+    "Finally! I’ve been waiting forever. This service is ridiculously slow. My receiver isn’t working, and I need a refresh signal—again. This keeps happening!"
+    Hello? Are you still there?
+    "Yes, obviously. Can we just fix this already?"
+    Okay. Hello. My name is Eileen. And how may I help you?
+    "I just told you! I need a refresh signal. Do you guys even listen?"
+    I've got you. Um, I've just got to make sure that I got the right account in front of me. May I have the name on the account or the business name on the account?
+    "Dallas Wind Drilling. Seriously, I don’t have all day for this."
+    Alright. I've got to get you to the correct department because I don't have access to your account since it's a commercial account. If you'll bear with me, I'll get you right over to that department, okay?"
+    "What?! I waited all this time just for you to tell me you can’t help me? Unbelievable. This is exactly why I hate calling customer service."
+    "Whatever. Just transfer me already."
+    "They'll be right with you momentarily. Have a great day. Bye-bye."
+    # 
+
+
+============================================================
+2025-04-21 11:33:49.296352 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-21 15:33:23.759924 | Input - Call Transcript
+============================================================
+2024-05-01 06:34:30: Sighs “Thank you so much for your patience… I guess. Oh, I'm sorry. I'm still here. Have a good day—wait, what? Ugh, fine. Hey, I'm here.”
+    Hi. Yes. My name is Ellen. I do apologize for the wait. How may I assist you today?
+    "Finally! I’ve been waiting forever. This service is ridiculously slow. My receiver isn’t working, and I need a refresh signal—again. This keeps happening!"
+    Hello? Are you still there?
+    "Yes, obviously. Can we just fix this already?"
+    Okay. Hello. My name is Eileen. And how may I help you?
+    "I just told you! I need a refresh signal. Do you guys even listen?"
+    I've got you. Um, I've just got to make sure that I got the right account in front of me. May I have the name on the account or the business name on the account?
+    "Dallas Wind Drilling. Seriously, I don’t have all day for this."
+    Alright. I've got to get you to the correct department because I don't have access to your account since it's a commercial account. If you'll bear with me, I'll get you right over to that department, okay?"
+    "What?! I waited all this time just for you to tell me you can’t help me? Unbelievable. This is exactly why I hate calling customer service."
+    "Whatever. Just transfer me already."
+    "They'll be right with you momentarily. Have a great day. Bye-bye."
+    # 
+
+
+============================================================
+2025-04-21 15:33:23.760733 | Input - Customer Profile
+============================================================
+The customer has repeatedly faced issues with their receiver, including lost connections to the antenna and the need for a refresh signal. These issues were typically resolved through troubleshooting steps provided by the customer service representatives, such as sending a refresh signal or reactivating the receiver. In some instances, the customer was advised to contact a local retailer for assistance with upgrading or replacing their equipment. The customer expressed frustration with the process, citing difficulties in verifying their account information and accessing the necessary support. Overall, the customer's issue resolution history suggests a need for more streamlined and efficient support processes.
+
+
+============================================================
+2025-04-21 15:33:27.358698 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-21 15:33:36.097303 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "The root cause of the customer's dissatisfaction is the recurring issue with their receiver, which has resulted in repeated calls to customer service. The customer has faced difficulties in resolving the issue due to a combination of factors, including long wait times, ineffective troubleshooting steps, and a lack of streamlined support processes. Systemic triggers include the need for multiple transfers to different departments, difficulties in verifying account information, and a general perception that customer service representatives are not listening to their concerns. Procedural gaps include the absence of a clear escalation process for commercial accounts and inadequate training for customer service representatives to handle complex technical issues. Linguistic markers such as 'I've been waiting forever', 'This service is ridiculously slow', and 'I hate calling customer service' indicate a high level of frustration and anger.",
+  "real_time_guidance": "To mitigate the customer's frustration and improve their experience, the following actionable suggestions are recommended: (1) Provide an estimated wait time and regular updates to manage the customer's expectations. (2) Offer a clear explanation of the troubleshooting steps and the rationale behind them to increase transparency and build trust. (3) Ensure that customer service representatives are equipped to handle complex technical issues and have access to the necessary resources and support. (4) Implement a streamlined escalation process for commercial accounts to reduce the number of transfers and minimize wait times. (5) Use customer profiling to personalize the support experience and address the customer's specific needs and concerns. By addressing these systemic triggers and procedural gaps, customer service representatives can reduce the risk of escalation and improve the overall customer experience."
+}
+
+
+============================================================
+2025-04-21 15:33:43.047042 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.85,
+  "churn_risk_label": "High",
+  "explanation": "The customer's negative sentiment and tone, as indicated by the sentiment analysis output, suggest a high level of frustration and anger. The root cause findings reveal recurring issues with the receiver, including lost connections and the need for refresh signals, which have resulted in repeated calls to customer service. The customer's history of difficulties in resolving these issues, combined with their expressed frustration and perception of ineffective support processes, contribute to a high churn risk score. Specifically, the linguistic markers such as 'I've been waiting forever', 'This service is ridiculously slow', and 'I hate calling customer service' indicate a strong likelihood of churn. Furthermore, the customer's commercial account type and the lack of streamlined support processes exacerbate the risk. Therefore, based on the quantified emotional volatility, negative sentiment intensity, recurrence and severity of issues, and customer interaction history, the churn risk score is 0.85, corresponding to a 'High' churn risk label. Proactive intervention is recommended to mitigate the risk of churn and retain the customer."
+}
+
+
+============================================================
+2025-04-21 15:33:50.891983 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Offer a complimentary upgrade to a premium service package, including a dedicated technical support line and a replacement receiver with enhanced connectivity features. Provide a discount of 20% on the monthly subscription fee for the next 6 months, and assign a dedicated account manager to oversee the customer's issues and ensure timely resolutions.",
+  "communication_recommendation": "Execute the strategy through a personalized phone call from the dedicated account manager, within the next 24 hours, to acknowledge the customer's frustrations, apologize for the inconvenience, and present the retention offer. The tone should be empathetic, solution-focused, and conciliatory, with a clear explanation of the benefits and value-added services included in the premium package.",
+  "justification": "This retention strategy is optimal because it directly addresses the customer's pain points, including the recurring receiver issues, long wait times, and perceived lack of effective support. By offering a premium service package with dedicated technical support and a replacement receiver, we can significantly reduce the likelihood of future issues and demonstrate our commitment to the customer's satisfaction. The discount on the monthly subscription fee provides a tangible incentive for the customer to continue their subscription, while the dedicated account manager ensures that the customer receives personalized attention and timely issue resolution. The proactive and personalized approach, combined with the value-added services and incentives, is likely to mitigate the high churn risk and improve customer loyalty, as supported by historical effectiveness data and predictive reasoning."
+}
+
+
+============================================================
+2025-04-22 10:13:50.045266 | Input - Call Transcript
+============================================================
+<INSERT CALL TRANSCRIPT HERE>
+
+
+============================================================
+2025-04-22 10:13:50.045679 | Input - Customer Profile
+============================================================
+Customer CUST_101 has been with the service for 8 months on a monthly contract, subscribing to the Premium plan and paying via credit card. Their average monthly spend is $85.00, indicating a moderate to high level of engagement. However, there are risk indicators such as 3 unresolved issues and 2 recent outages, which may affect their satisfaction. Despite these issues, the customer has had a total of 12 interactions, suggesting they are actively seeking support or resolution. With a Silver loyalty tier, the customer is somewhat invested in the service but may be at risk of churn due to the unresolved issues and recent outages. Overall, the customer's profile suggests a need for proactive retention strategies to address their concerns and enhance their experience.
+
+
+============================================================
+2025-04-22 10:13:52.043150 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "not sufficient information",
+  "tone": "N/A",
+  "sentiment_score": 0.0
+}
+
+
+============================================================
+2025-04-22 10:15:20.667823 | Input - Call Transcript
+============================================================
+Agent: "Thank you for calling TelecomPlus. How can I assist you today?"
+                        Customer: "Hi, I’ve been getting constant call drops for the past three days. Every time I’m in the middle of a conversation, it just disconnects!"
+                        Agent: "I’m sorry to hear that. Let’s check your connection. Are you at home right now?"
+                        Customer: "Yes, and I’ve tried restarting my phone multiple times. It’s not a device issue."
+                        Agent: "I see. Let’s reset your network settings remotely. This might take 30 seconds… Done. Could you test a call now?"
+                        Customer: "Hold on… [pause]… It seems better. Thank you!"
+                        Agent: "Great! I’ll also file a ticket with our network team to investigate further."
+                        Customer: "Appreciate it. Have a good day!
+
+
+============================================================
+2025-04-22 10:15:20.668143 | Input - Customer Profile
+============================================================
+Customer CUST_101 has been with the service for 8 months on a monthly contract, subscribing to the premium plan and paying via credit card, with an average monthly spend of $85.00. They have had a total of 12 interactions, indicating some level of engagement, but there are concerns with 3 unresolved issues and 2 recent outages, which could pose a risk to their retention. Currently, they hold a Silver loyalty tier, suggesting a moderate level of loyalty. Overall, while there are positive signs of engagement and spending, the unresolved issues and outages require attention to prevent potential churn and to further cultivate their loyalty.
+
+
+============================================================
+2025-04-22 10:15:22.308892 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "positive",
+  "tone": "satisfied",
+  "sentiment_score": 0.8
+}
+
+
+============================================================
+2025-04-22 10:15:22.309028 | Pipeline Decision
+============================================================
+Sentiment is positive. No further action taken.
+
+
+============================================================
+2025-04-22 10:16:22.335504 | Input - Call Transcript
+============================================================
+Agent: "Thanks for calling us, What is your concern today?"
+Customer: "I have had enough. Cancel my service now."
+Agent: "I am extremely sorry to hear that, can I know the reason for this."
+Customer: "Poor coverage, hidden fees and bad customer service, need more reasons?"
+Agent: "How about 30% discount + additional free premium channel subscription for 6 months?"
+Customer: "No, thanks, already switched to another provider
+
+
+============================================================
+2025-04-22 10:16:22.335997 | Input - Customer Profile
+============================================================
+Customer CUST_101 has been with the service for 8 months on a monthly contract, subscribing to the Premium plan and paying through credit card, with an average monthly spend of $85.00. They have had a total of 12 interactions, indicating a moderate level of engagement. However, there are 3 unresolved issues and 2 recent outages, which signal potential risk and dissatisfaction. Despite this, the customer holds a Silver loyalty tier, suggesting some level of retained value. Overall, the customer's profile suggests a need for attention to resolve pending issues and improve their experience to prevent potential churn, while also recognizing their loyalty and spending habits.
+
+
+============================================================
+2025-04-22 10:16:24.186921 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-22 10:16:32.119119 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "The root causes of dissatisfaction for Customer CUST_101 are poor coverage, hidden fees, and bad customer service. Historical transcripts show similar patterns of complaints regarding coverage issues, unexpected charges, and unhelpful agents. Systemic problems include inadequate network infrastructure, misleading pricing strategies, and insufficient agent training. Procedural gaps involve ineffective issue escalation and resolution processes. Linguistic markers such as 'had enough' and 'need more reasons' indicate extreme frustration and annoyance. The customer's loyalty tier and moderate engagement level suggest that these issues have been ongoing and unaddressed, leading to a breakdown in trust and ultimately, the decision to cancel the service.",
+  "real_time_guidance": "For agents or supervisors interacting with Customer CUST_101 or similar cases, it is crucial to acknowledge and apologize for the specific issues mentioned, such as poor coverage and hidden fees. Offer concrete solutions like upgrading their plan to one with better coverage, providing a detailed breakdown of charges to avoid hidden fees, and ensuring that customer service interactions are friendly, helpful, and empowered to resolve issues efficiently. Given the customer's loyalty and spending habits, recognize their value and express appreciation for their business. In real-time, agents should be guided to empathize with the customer's frustration, validate their concerns, and work proactively to address the root causes of dissatisfaction. This may involve escalating issues promptly, providing transparent information, and following up to ensure that problems are fully resolved. By doing so, agents can mitigate the customer's anger, potentially prevent churn, and improve overall service design and operational workflows."
+}
+
+
+============================================================
+2025-04-22 10:16:37.781306 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.95,
+  "churn_risk_label": "High",
+  "explanation": "The customer has explicitly expressed their intention to cancel the service due to poor coverage, hidden fees, and bad customer service. The sentiment analysis output indicates a strongly negative sentiment with a score of -0.8 and an angry tone. The customer's profile shows a moderate level of engagement but is marred by 3 unresolved issues and 2 recent outages, indicating significant dissatisfaction. Despite holding a Silver loyalty tier, the customer's decision to switch to another provider suggests a complete breakdown in trust. The root cause findings highlight systemic, procedural, and linguistic markers that have led to this point, including inadequate network infrastructure, misleading pricing strategies, and insufficient agent training. Given these factors, the churn risk score is extremely high, warranting immediate attention to prevent loss."
+}
+
+
+============================================================
+2025-04-22 10:16:44.918419 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Emergency Retention Package: Offer a personalized apology and a one-time courtesy credit of $50, upgrade to a higher loyalty tier (Gold), and provide a dedicated customer service agent for the next 3 months. Additionally, offer to waive the hidden fees for the next 6 months and provide a premium network booster to improve coverage.",
+  "communication_recommendation": "Execute the strategy via a phone call within the next 24 hours, using an empathetic tone and acknowledging the customer's frustration. The agent should be trained to address the customer's specific pain points, provide clear explanations of the offered solutions, and set realistic expectations for issue resolution. Follow up with a personalized email summarizing the discussion and agreements made.",
+  "justification": "This retention strategy is optimal because it directly addresses the customer's stated reasons for canceling the service (poor coverage, hidden fees, and bad customer service) while also acknowledging their loyalty and value to the company. The emergency package provides immediate relief, and the upgrade to a higher loyalty tier recognizes the customer's spending habits and moderate engagement level. By providing a dedicated agent and a premium network booster, we demonstrate a commitment to resolving the systemic issues that led to the customer's dissatisfaction. Given the extremely high churn risk score (0.95), an immediate and personalized intervention is necessary to prevent loss and potentially salvage the customer relationship."
+}
+
+
+============================================================
+2025-04-22 10:21:14.559977 | Input - Call Transcript
+============================================================
+Agent: "Thanks for calling us, What is your concern today?"
+Customer: "I have had enough. Cancel my service now."
+Agent: "I am extremely sorry to hear that, can I know the reason for this."
+Customer: "Poor coverage, hidden fees and bad customer service, need more reasons?"
+Agent: "How about 30% discount + additional free premium channel subscription for 6 months?"
+Customer: "No, thanks, already switched to another provider"
+
+
+============================================================
+2025-04-22 10:21:14.560322 | Input - Customer Profile
+============================================================
+The customer, CUST_110, has been with the service for 48 months under an Annual contract, subscribing to the Premium plan with an Auto-Pay payment method. Their loyalty tier is Gold, indicating a high level of engagement and loyalty. The customer has had a total of 30 interactions, suggesting regular communication. However, there are notable risk indicators, including 10 unresolved issues and 6 recent outages, which may impact their satisfaction and loyalty. Despite these challenges, their average monthly spend of $110.00 and Gold loyalty tier status suggest a significant investment in the service. Overall, the customer's profile indicates a need for personalized attention to address unresolved issues and prevent potential churn, while also recognizing and rewarding their loyalty and ongoing engagement.
+
+
+============================================================
+2025-04-22 10:21:16.186029 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-22 10:21:23.186632 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "The root causes of dissatisfaction for customer CUST_110 are poor coverage, hidden fees, and bad customer service. Historical transcripts reveal similar patterns of complaints about network coverage and unexpected charges. Systemic problems include inadequate communication about service outages and fees, while procedural gaps involve the inability to address customer concerns in a timely and personalized manner. Linguistic markers such as 'had enough' and 'need more reasons' indicate a high level of frustration and escalation triggers commonly associated with dissatisfaction.",
+  "real_time_guidance": "To mitigate customer frustration and prevent churn, agents should prioritize empathetic listening and personalized problem-solving. Offer proactive solutions such as coverage enhancement options, fee waivers, or complimentary services. Recognize and reward customer loyalty by providing exclusive benefits or priority support. Supervisors should monitor the interaction and be prepared to escalate the issue to a specialized team if necessary. Consider providing additional training to agents on effective communication, conflict resolution, and customer retention strategies. Dynamic guidance includes: (1) acknowledge and validate the customer's concerns, (2) provide transparent information about service outages and fees, (3) offer personalized solutions and compromises, and (4) ensure timely follow-up to address unresolved issues and prevent future escalations."
+}
+
+
+============================================================
+2025-04-22 10:21:28.415910 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.92,
+  "churn_risk_label": "High",
+  "explanation": "The customer, CUST_110, has expressed extreme dissatisfaction with the service, citing poor coverage, hidden fees, and bad customer service as reasons for canceling their subscription. The sentiment analysis output indicates a strongly negative sentiment with a score of -0.8, and the tone is categorized as 'angry'. The customer's history of 10 unresolved issues and 6 recent outages further exacerbates their frustration. Although they have been a loyal customer with a Gold loyalty tier and an average monthly spend of $110.00, their emotional volatility and negative experience outweigh their loyalty. The root cause findings highlight systemic and procedural gaps in addressing customer concerns, contributing to a high likelihood of churn. Given these factors, a churn risk score of 0.92 is assigned, indicating a high risk of churn."
+}
+
+
+============================================================
+2025-04-22 10:21:34.615575 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Comprehensive Service Recovery Package",
+  "communication_recommendation": "Urgent, empathetic call within 24 hours, followed by a personalized email with detailed explanations and offers",
+  "justification": "Given the customer's high churn risk score of 0.92 and extreme dissatisfaction, a multi-faceted approach is necessary. The Comprehensive Service Recovery Package would include: 1) an upgrade to a higher-tier plan with improved coverage, 2) a waiver of hidden fees for the next 6 months, 3) a dedicated customer service representative for timely issue resolution, and 4) a loyalty reward for their continued patronage. The urgent and empathetic communication approach acknowledges the customer's frustration, addresses their pain points directly, and demonstrates a commitment to their satisfaction and loyalty. This strategy is optimal because it directly targets the root causes of dissatisfaction (poor coverage, hidden fees, bad customer service), while also recognizing the customer's value and loyalty (Gold tier, high average monthly spend). By proactively addressing these concerns and providing tangible benefits, we can mitigate the churn risk and work towards retaining the customer."
+}
+
+
+============================================================
+2025-04-22 10:27:37.359134 | Input - Call Transcript
+============================================================
+The following call took place on 10/10/23 at 18:00 between customer CUST_110 and agent AGENT_05. The call lasted for 1:00 minutes.
+
+Agent: "Thanks for calling us, What is your concern today?"
+Customer: "I have had enough. Cancel my service now."
+Agent: "I am extremely sorry to hear that, can I know the reason for this."
+Customer: "Poor coverage, hidden fees and bad customer service, need more reasons?"
+Agent: "How about 30% discount + additional free premium channel subscription for 6 months?"
+Customer: "No, thanks, already switched to another provider"
+
+
+============================================================
+2025-04-22 10:27:37.359666 | Input - Customer Profile
+============================================================
+Customer CUST_110 has been with the service for 48 months, holding a premium plan on an annual contract with auto-pay, indicating a commitment to the service. Their average monthly spend is $110.00, and they have had a total of 30 interactions, suggesting an engagement level. However, they have 10 unresolved issues and have experienced 6 recent outages, which are significant risk indicators for churn. Despite these challenges, the customer holds a Gold loyalty tier, reflecting their long-standing relationship and potential value to the service provider. Overall, while there are risk signals, the customer's loyalty status and tenure suggest they are worth targeted retention efforts to resolve their issues and prevent churn.
+
+
+============================================================
+2025-04-22 10:27:39.090614 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-22 10:27:46.078298 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "Poor network coverage, hidden fees, and inadequate customer service are the primary root causes of dissatisfaction for customer CUST_110. Historical transcripts reveal similar patterns of dissatisfaction due to repeated outages, unmet expectations, and unaddressed concerns. Systemic problems, such as inadequate infrastructure and inefficient customer support processes, contribute to these issues. Procedural gaps, including lack of proactive communication and timely resolution of issues, exacerbate the problems. Linguistic markers, such as the customer's use of phrases like 'I have had enough' and 'need more reasons?', indicate a high level of frustration and anger.",
+  "real_time_guidance": " Agents should prioritize empathetic listening and acknowledge the customer's frustrations. Offer personalized solutions, such as upgraded plans with enhanced coverage, waived fees, or dedicated customer support. Provide transparent explanations of charges and services to address concerns about hidden fees. Consider escalating the issue to a supervisor or specialist who can offer more tailored assistance. Real-time guidance for agents includes: 1) Active listening to identify key concerns, 2) Proactive offer of relevant solutions, 3) Transparent communication about services and charges, and 4) Timely escalation of issues to specialized support. By addressing these concerns dynamically, agents can mitigate the customer's frustration, prevent churn, and enhance the overall customer experience."
+}
+
+
+============================================================
+2025-04-22 10:27:51.536617 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.9,
+  "churn_risk_label": "High",
+  "explanation": "The customer's negative sentiment and angry tone, as expressed in the call transcript, indicate a high level of frustration. The root cause findings reveal systemic problems with poor network coverage, hidden fees, and inadequate customer service, which have led to repeated outages and unmet expectations. Despite the customer's long tenure and loyalty status, the recurrence and severity of issues, combined with their recent statement of having already switched to another provider, suggest a very high likelihood of churn. The customer's interaction history, including 10 unresolved issues and 6 recent outages, further supports this assessment. Therefore, a churn risk score of 0.9 and a risk label of 'High' are assigned to customer CUST_110."
+}
+
+
+============================================================
+2025-04-22 10:28:00.945088 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Personalized apology and Rectification Plan: Offer a formal apology for the poor coverage, hidden fees, and bad customer service. Provide a comprehensive rectification plan, including (1) a one-time courtesy credit of $50 for the inconvenience caused, (2) an enhanced premium plan upgrade with additional free channels for 12 months at no extra cost, and (3) a dedicated customer service manager for escalated issues. Additionally, commit to improving network coverage in their area within the next 60 days and provide regular updates on the progress.",
+  "communication_recommendation": "Urgent call from a senior customer service representative within the next 24 hours, preferably during a time of day when the customer is most likely to be available. The tone should be empathetic, apologetic, and solution-focused. Before the call, the representative should be fully briefed on the customer's history, pain points, and the proposed rectification plan to ensure a personalized and effective interaction.",
+  "justification": "Given customer CUST_110's high churn risk score of 0.9, recent negative experience, and significant investment in the service (48 months tenure, premium plan, and high average monthly spend), a proactive, personalized, and immediate retention effort is crucial. The customer's negative sentiment and angry tone, as analyzed from the call transcript, indicate a high level of frustration that requires an empathetic and apologetic approach. Historically, similar customers have responded positively to personalized rectification plans that address their specific pain points, and the offer of a dedicated customer service manager can help rebuild trust. The commitment to improving network coverage and providing regular updates demonstrates a proactive stance on resolving systemic issues, which is essential for retaining a high-value customer like CUST_110. By executing this retention strategy promptly and effectively, we can mitigate the churn risk, strengthen our relationship with the customer, and potentially recover their business."
+}
+
+
+============================================================
+2025-04-22 10:35:42.101539 | Input - Call Transcript
+============================================================
+The following call took place on 10/10/23 at 18:00 between customer CUST_110 and agent AGENT_05. The call lasted for 1:00 minutes.
+
+Agent: "Thanks for calling us, What is your concern today?"
+Customer: "I have had enough. Cancel my service now."
+Agent: "I am extremely sorry to hear that, can I know the reason for this."
+Customer: "Poor coverage, hidden fees and bad customer service, need more reasons?"
+Agent: "How about 30% discount + additional free premium channel subscription for 6 months?"
+Customer: "No, thanks, already switched to another provider"
+
+
+============================================================
+2025-04-22 10:35:42.101714 | Input - Customer Profile
+============================================================
+Customer CUST_110 has a notable tenure of 48 months with an annual contract on a premium plan, utilizing auto-pay and maintaining an average monthly spend of $110.00. They have had a total of 30 interactions, indicating a moderate level of engagement. However, there are risk signals, including 10 unresolved issues and a recent outage count of 6, which may impact their satisfaction. Despite these challenges, the customer has achieved a Gold loyalty tier, suggesting a strong loyalty foundation. Overall, this customer profile presents a mix of positive engagement and risk factors that warrant attention to ensure retention and satisfaction.
+
+
+============================================================
+2025-04-22 10:35:43.809559 | Sentiment Agent Output
+============================================================
+{
+  "sentiment": "negative",
+  "tone": "angry",
+  "sentiment_score": -0.8
+}
+
+
+============================================================
+2025-04-22 10:35:52.385325 | Root Cause Analysis Output
+============================================================
+{
+  "root_cause": "Poor network coverage, unexpected fees, and perceived bad customer service are the primary root causes of dissatisfaction for customer CUST_110. Historical transcripts reveal similar patterns of frustration due to service outages and hidden fees, suggesting systemic flaws in service provision and billing transparency. The customer's recent experience with six outages and ten unresolved issues exacerbates the dissatisfaction, indicating gaps in procedural support and issue resolution. The linguistic markers 'had enough' and 'need more reasons' underscore the customer's heightened frustration and sense of being undervalued, which are common escalation triggers in similar past cases.",
+  "real_time_guidance": "For agents or supervisors handling similar cases, it's crucial to acknowledge the customer's frustration promptly and empathetically. Offer transparent explanations for service outages and hidden fees, and provide actionable solutions such as personalized discounts, priority service restoration, or dedicated support channels. Consider escalating the issue to ensure prompt resolution of outstanding problems. Emphasize the value of loyalty programs like the Gold loyalty tier and explore options to enhance the customer's perception of service quality and responsiveness. Real-time guidance includes: 1) immediate outage resolution, 2) transparent billing and fee structure explanation, 3) personalized compensation or service upgrade offers, and 4) proactive follow-up to ensure satisfaction and prevent future escalations."
+}
+
+
+============================================================
+2025-04-22 10:36:08.797995 | Churn Prediction Output
+============================================================
+{
+  "churn_risk_score": 0.8,
+  "churn_risk_label": "High",
+  "explanation": "The customer's negative sentiment, recurring and severe root causes of dissatisfaction (poor network coverage, unexpected fees, and bad customer service), high number of unresolved issues, and decision to switch providers despite offered incentives contribute to the high churn risk score."
+}
+
+
+============================================================
+2025-04-22 10:36:15.477685 | Retention Strategy Output
+============================================================
+{
+  "retention_strategy": "Personalized apology and acknowledgement of poor service, offer of personalized onboarding with a dedicated customer success manager to address coverage and billing concerns, provide a one-time credit of $50 for the recent outages, and an additional 20% discount on the next 3 months of service",
+  "communication_recommendation": "Sensitive and empathetic tone via a personalized phone call within the next 24 hours, followed by a summary email with details of the proposed resolution and a clear call-to-action for feedback, utilizing language that acknowledges the customer's frustration and values their loyalty",
+  "justification": "The high churn risk score of 0.8, negative sentiment, and expressed reasons for dissatisfaction necessitate an immediate, multi-faceted retention strategy. Historically, personalized outreach and tangible gestures of goodwill have shown effectiveness in mitigating churn among similarly profiled customers. This approach aligns with retention policy rules prioritizing proactive issue resolution, transparency, and customer satisfaction. Given the customer's Gold loyalty tier status and notable tenure, investing in their satisfaction is crucial for long-term loyalty and potential upselling opportunities. The proposed strategy aims to directly address the root causes of dissatisfaction, rebuild trust, and incentivize continued service, thereby reducing churn risk and fostering a positive customer experience."
+}
+
+
+============================================================
+2025-04-22 11:00:02.783836 | Churn Prediction Output
+============================================================
+❌ Failed or invalid JSON.
+
+
+============================================================
+2025-04-22 13:37:29.375885 | Churn Prediction Output
+============================================================
+❌ Failed or invalid JSON.
+

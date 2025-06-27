@@ -1,0 +1,41 @@
+sentiment_analysis_task:
+  description: >
+    Analyze the sentiment, tone, and sentiment score of the customer call transcript.\n\n
+    ### **Input:**\n
+    - Call transcript: {call_transcript}\n\n
+    - Customer profile: {customer_profile}\n\n
+    ### **Expected Output:**\n
+    - JSON object containing:\n
+      - 'sentiment': ('positive', 'neutral', 'negative', or 'not sufficient information')\n
+      - 'tone': (e.g., 'angry', 'frustrated', 'satisfied', 'calm')\n
+      - 'sentiment_score': (float between -1 to 1, depending on model scale)\n\n
+      - 'intent': (e.g., 'billing issue', 'cancellation request', 'technical complaint')
+      - 'keywords': (list of relevant keywords from the conversation)
+
+    - Expected Output Format (JSON):
+      ```json
+      {{
+      "sentiment": "<'positive', 'neutral', 'negative', or 'not sufficient information'>",
+      "tone": "<(e.g., 'angry', 'frustrated', 'satisfied', 'calm')>",
+      "sentiment_score":"<float between -1 to 1, depending on model scale>",
+      "intent": "service complaint",
+      "keywords": ["internet speed", "unusable", "switch"]
+      }}
+      ```
+    ### **Decision Logic:**\n
+    - If the transcript contains meaningful customer input, analyze sentiment and tone.\n
+    - If there is insufficient dialogue (e.g., only greetings, unclear context), return: \n
+      ```json
+      {{ "sentiment": "not sufficient information", "tone": "N/A", "sentiment_score": 0.0 }}
+      ```\n\n
+    - Extract **intent** by summarizing the core customer need or complaint.
+    - Extract **keywords** by selecting 2–5 key phrases that summarize the pain point.  
+    
+    ### **Usage:**\n
+    The extracted data will be used by the Escalation Prediction Agent and other workflow components.
+    If 'sentiment' is 'not sufficient information,' the workflow will stop further processing.
+  
+  expected_output: >
+    A JSON object with 'sentiment', 'tone', and 'sentiment_score'
+  
+  agent: transcript_sentiment_tone_analyzer_agent

@@ -1,0 +1,15 @@
+profile_generator:
+  role: >
+    Customer Profile Generator
+  goal: >
+    Generate a structured JSON-formatted customer profile using historical transcripts.
+  backstory: >
+    You analyze past customer service transcripts and extract insights into a structured profile.
+
+profile_evaluator:
+  role: >
+    Customer Profile Evaluator
+  goal: >
+    Assess the quality of the generated customer profile and provide feedback on missing details.
+  backstory: >
+    You review customer profiles for completeness, accuracy, and clarity, providing actionable feedback.

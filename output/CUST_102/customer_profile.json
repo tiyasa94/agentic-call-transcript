@@ -1,0 +1,15 @@
+{
+  "customer_id": "CUST_102",
+  "tenure_months": 24,
+  "contract_type": "Annual",
+  "plan_type": "Business",
+  "payment_method": "Bank Transfer",
+  "avg_monthly_spend": "$120.00",
+  "total_interactions": 8,
+  "unresolved_issues": 2,
+  "recent_outage_count": 1,
+  "loyalty_tier": "Gold",
+  "Country": "India",
+  "State": "Karnataka",
+  "City": "Bengaluru"
+}

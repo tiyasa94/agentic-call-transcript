@@ -1,0 +1,23 @@
+{
+  "retention_strategy": [
+    "Provide immediate technical support to resolve internet speed issues",
+    "Offer a complimentary upgrade to a higher speed plan for a trial period",
+    "Assign a dedicated account manager for proactive issue resolution and communication",
+    "Provide a loyalty reward or discount for continued patronage",
+    "Schedule regular check-ins to ensure issue resolution and gather feedback"
+  ],
+  "communication_recommendation": [
+    "Use a empathetic and apologetic tone in all communications",
+    "Employ multiple communication channels including phone, email, and SMS for updates and follow-ups",
+    "Ensure timely responses to customer inquiries and concerns, ideally within 2 hours",
+    "Use personalized language addressing the customer by name and referencing their specific issues",
+    "Schedule a follow-up call within 24-48 hours to confirm issue resolution and customer satisfaction"
+  ],
+  "justification": [
+    "The customer's high churn risk score and negative sentiment necessitate immediate and proactive retention actions",
+    "The root causes of dissatisfaction, including inconsistent internet speed and unfulfilled promises, require targeted technical and service interventions",
+    "The customer's loyalty tier and tenure justify offering premium support and rewards to retain their business",
+    "The presence of unresolved issues and recent outage count indicate a need for enhanced technical support and proactive communication",
+    "The customer's intent to switch to a competitor if issues are not resolved demands swift and effective retention strategies to mitigate churn risk"
+  ]
+}

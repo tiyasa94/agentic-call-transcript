@@ -1,0 +1,10 @@
+{
+  "churn_risk_score": 0.71,
+  "churn_risk_label": "High",
+  "explanation": [
+    "Negative customer sentiment",
+    "Severe recurring technical and service issues",
+    "Customer intent to switch to a competitor",
+    "Presence of unresolved issues despite long tenure"
+  ]
+}
