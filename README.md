@@ -1,4 +1,4 @@
-# 📞 Agentic Customer Churn Analyzer
+# Agentic Customer Churn Analyzer
 
 An end-to-end AI-driven pipeline that analyzes customer service call transcripts to:
 
@@ -11,7 +11,7 @@ Built using **CrewAI**, **LiteLLM**, and **Streamlit** with OpenRouter-supported
 
 ---
 
-## 🎯 Features
+## Features
 
 * 📁 Upload and analyze customer and transcript CSV files
 * 🔎 Filter by location, contract type, and other criteria
@@ -27,7 +27,7 @@ Built using **CrewAI**, **LiteLLM**, and **Streamlit** with OpenRouter-supported
 
 ---
 
-## 🧠 Agent Architecture
+## Agent Architecture
 
 The system uses the **CrewAI** framework to orchestrate agents. Each agent specializes in a unique task to assess churn risk and recommend retention strategies:
 
@@ -39,7 +39,7 @@ The system uses the **CrewAI** framework to orchestrate agents. Each agent speci
 
 ---
 
-## 🧩 Technical Stack
+## Technical Stack
 
 | Component                  | Description                               |
 | -------------------------- | ----------------------------------------- |
@@ -55,7 +55,7 @@ Agents and tasks are dynamically loaded from YAML files:
 
 ---
 
-## 🏗️ Repository Structure
+## Repository Structure
 
 ```
 ├── app.py                          # Streamlit app entrypoint
@@ -74,13 +74,13 @@ Agents and tasks are dynamically loaded from YAML files:
 
 ---
 
-## 🖼️ Streamlit Dashboard Preview
+## Streamlit Dashboard Preview
 
 ![Streamlit UI Preview](./UI.png)
 
 ---
 
-## 🧪 How to Run
+## How to Run
 
 ### Clone the repo
 
@@ -110,7 +110,7 @@ streamlit run src/app.py
 
 ---
 
-## 📤 Outputs
+## Outputs
 
 Each customer gets:
 
@@ -120,7 +120,7 @@ Each customer gets:
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Docker
 
@@ -131,13 +131,13 @@ docker run -p 8080:8080 call_transcript_analytics
 
 ---
 
-## 🧠 Architecture Diagram
+## Architecture Diagram
 
 ![Architecture Diagram](docs/churn_prediction_workflow.png)
 
 ---
 
-## 🙌 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a new branch (`feature-xyz`)
@@ -147,6 +147,6 @@ docker run -p 8080:8080 call_transcript_analytics
 
 ---
 
-## 👩‍💻 Contributor
+## Contributor
 
 **Tiyasa Mukherjee** (Developer)
