@@ -85,7 +85,7 @@ Agents and tasks are dynamically loaded from YAML files:
 ### Clone the repo
 
 ```bash
-git clone 
+git clone https://github.com/tiyasa94/agentic-call-transcript.git
 ```
 
 ### Installation
