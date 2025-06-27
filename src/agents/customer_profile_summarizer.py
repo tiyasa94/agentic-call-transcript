@@ -3,27 +3,33 @@ import pandas as pd
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import litellm
+from dotenv import load_dotenv
+load_dotenv()
 
 # Enable debug mode
 litellm._turn_on_debug()
 
 # Initialize LLM
+# ✅ Configure OpenRouter LLM
 llm = LLM(
-    api_key=os.getenv("WATSONX_APIKEY"),
-    model="watsonx/meta-llama/llama-3-3-70b-instruct",
-    base_url=os.getenv("WATSONX_URL"),
+    model="openrouter/meta-llama/llama-4-scout:free",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+    base_url="https://openrouter.ai/api/v1",
+    litellm_provider="openrouter",
     max_tokens=1000
 )
 
+
+
 # Path to input data
-CSV_PATH = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/Input/Customer_Data.csv'
+CSV_PATH = '/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/Input/Customer_Data.csv'
 
 @CrewBase
 class CustomerProfileSummarizerCrew():
     """Customer Profile Summarizer Crew"""
 
-    agents_config = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/src/config/agents.yaml'
-    tasks_config = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/src/config/tasks_customer_profile.yaml'
+    agents_config = '/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/src/config/agents.yaml'
+    tasks_config = '/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/src/config/tasks_customer_profile.yaml'
 
     @agent
     def customer_profile_summarizer_agent(self) -> Agent:

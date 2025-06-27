@@ -10,7 +10,7 @@ from agents.root_cause_analysis import RootCauseAnalysisCrew
 from agents.churn_prediction import ChurnPredictionCrew
 from agents.retention_recommender import RetentionStrategyRecommenderCrew
 import os
-load_dotenv("/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/.env", override=True)
+load_dotenv("/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/.env", override=True)
 
 # Instantiate Crews
 sentiment_crew = SentimentToneAnalyzerCrew()
@@ -46,7 +46,7 @@ def log_to_file(title, content):
 
 
 def save_json_output(filename, data, customer_id):
-    output_dir = f"/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/output/{customer_id}"
+    output_dir = f"/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/output/{customer_id}"
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, filename)
     with open(output_path, "w") as f:
@@ -54,7 +54,7 @@ def save_json_output(filename, data, customer_id):
     print(f"✅ Saved: {output_path}")
 
 def clean_output_folder():
-    output_dir = "/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/output"
+    output_dir = "/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/output"
     for filename in os.listdir(output_dir):
         file_path = os.path.join(output_dir, filename)
         try:
@@ -77,7 +77,9 @@ def pipeline(call_transcript, customer_profile, target_customer_id):
             "call_transcript": call_transcript,
             "customer_profile": customer_profile
         }
+    print('\n\n\nSentiment Inputs:\n\n\n',sentiment_inputs)
     sentiment_output = sentiment_crew.crew().kickoff(inputs=sentiment_inputs)
+    print("\n\n\nSentiment Output: ", sentiment_output)
     sentiment_json = clean_and_convert_to_json(sentiment_output.raw)
     # sentiment_json["customer_id"] = target_customer_id
     save_json_output("sentiment.json", sentiment_json, target_customer_id)
@@ -87,19 +89,16 @@ def pipeline(call_transcript, customer_profile, target_customer_id):
         return
 
     sentiment_label = sentiment_json["sentiment"].lower()
-    # print(f"\nDetected Sentiment: {sentiment_label}")
+    print(f"\nDetected Sentiment: {sentiment_label}")
 
     # Step 2: If POSITIVE → END
     if sentiment_label == "positive":
         print("\nSentiment is positive. No further action required.")
-        # sentiment_json["customer_id"] = target_customer_id
         save_json_output("sentiment.json", sentiment_json, target_customer_id)
         return
 
     # Step 3: If NEUTRAL → GO DIRECTLY TO RETENTION STRATEGY
     elif sentiment_label == "neutral":
-        # print("\nℹ️ Sentiment is neutral. Proceeding directly to Retention Strategy.")
-        # sentiment_json["customer_id"] = target_customer_id
         save_json_output("sentiment.json", sentiment_json, target_customer_id)
         retention_inputs = {
             "call_transcript": call_transcript,
@@ -110,9 +109,6 @@ def pipeline(call_transcript, customer_profile, target_customer_id):
         }
         retention_output = retention_crew.crew().kickoff(inputs=retention_inputs)
         retention_json = clean_and_convert_to_json(retention_output.raw)
-        # print("\n🟢 Retention Strategy Output:\n", retention_json)
-        # log_to_file("Retention Strategy Output", retention_json)
-        # retention_json["customer_id"] = target_customer_id
         save_json_output("retention_recommender.json", retention_json, target_customer_id)
 
     # Step 4: If NEGATIVE → RCA → CHURN → (If needed) RETENTION
@@ -159,19 +155,12 @@ def pipeline(call_transcript, customer_profile, target_customer_id):
             }
             retention_output = retention_crew.crew().kickoff(inputs=retention_inputs)
             retention_json = clean_and_convert_to_json(retention_output.raw)
-            # print("\n🟢 Retention Strategy Output:\n", retention_json)
-            # log_to_file("Retention Strategy Output", retention_json)
-            # retention_json["customer_id"] = target_customer_id
             save_json_output("retention_recommender.json", retention_json, target_customer_id)
         else:
-            # print("\n✅ Churn risk is low. No retention strategy required.")
-            # log_to_file("Pipeline Decision", "Churn risk is low. No retention strategy required.")
-            # retention_json["customer_id"] = target_customer_id
             save_json_output("retention_recommender.json", retention_json, target_customer_id)
 
     else:
         print("\nUnknown sentiment value. Skipping.")
-        # log_to_file("Pipeline Error", f"Unknown sentiment value: {sentiment_label}")
 
 
 
@@ -183,86 +172,3 @@ def pipeline(call_transcript, customer_profile, target_customer_id):
 
 
 
-# if __name__ == "__main__":
-#     clean_output_folder()
-#     # File paths
-#     CSV_CUSTOMER_PATH = "/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/Input/Customer_Data.csv"
-#     CSV_CALL_PATH = "/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/Input/Call_Transcript_Data.csv"
-
-#     # Choose a specific customer
-#     target_customer_id = "CUST_110"
-
-#     # Load data
-#     df_customers = pd.read_csv(CSV_CUSTOMER_PATH)
-#     df_calls = pd.read_csv(CSV_CALL_PATH)
-
-#     # Get customer profile row
-#     customer_row = df_customers[df_customers["customer_id"] == target_customer_id]
-#     if customer_row.empty:
-#         print(f"No customer found with ID: {target_customer_id}")
-#         exit()
-#     customer_data = customer_row.iloc[0].to_dict()
-
-#     # Get call transcript row
-#     call_row = df_calls[df_calls["customer_id"] == target_customer_id]
-#     if call_row.empty:
-#         print(f"No call transcript found for customer: {target_customer_id}")
-#         exit()
-
-#     # Optional: parse call_date
-#     df_calls["call_date"] = pd.to_datetime(df_calls["call_date"], errors="coerce")
-#     call_data = call_row.iloc[0]
-
-#     # Run Customer Profile Summarizer
-#     summarizer_crew = CustomerProfileSummarizerCrew()
-#     customer_profile_output = summarizer_crew.crew().kickoff(inputs=customer_data)
-#     customer_profile_json = clean_and_convert_to_json(customer_profile_output.raw)
-#     if not customer_profile_json:
-#         print("Failed to extract profile summary.")
-#         exit()
-#     customer_profile = customer_profile_json.get("summary", "")
-#     customer_profile_json["customer_id"] = target_customer_id
-#     # print("\nCustomer Profile Summary:\n", customer_profile)
-#     save_json_output("customer_profile.json", customer_profile_json)
-
-#     # Construct context phrase + transcript
-#     call_transcript_summary = (
-#         f"The following call took place on {call_data['call_date']} at {call_data['call_time']} "
-#         f"between customer {call_data['customer_id']} and agent {call_data['agent_id']}. "
-#         f"The call lasted for {call_data['call_duration']} minutes.\n\n"
-#     )
-
-#     # Full transcript with summary prefix
-#     call_transcript = call_transcript_summary + call_data["transcript"]
-
-#     # Create structured JSON explicitly
-#     call_transcript_json = {
-#         "call_id": call_data["call_id"],  
-#         "call_date": str(call_data["call_date"].date()) if isinstance(call_data["call_date"], pd.Timestamp) else call_data["call_date"],
-#         "call_time": call_data["call_time"],
-#         "call_duration": call_data["call_duration"],
-#         "agent_id": call_data["agent_id"],
-#         "customer_id": target_customer_id,
-#         "transcript": call_data["transcript"],
-#         "context_summary": call_transcript_summary.strip()
-#     }
-
-#     # Save the JSON
-#     save_json_output("call_transcript.json", call_transcript_json)
-
-    
-#     # call_transcript = call_transcript_summary + call_data["transcript"]
-
-#     # call_transcript_json = call_data.to_dict()
-#     # call_transcript_json["customer_id"] = target_customer_id
-#     # call_transcript_json["context_summary"] = call_transcript_summary
-
-#     #     # print("\nFinal Call Transcript Input:\n", call_transcript)
-#     # save_json_output("call_transcript.json", call_transcript_json)
-
-
-#     # Run the pipeline
-#     print("\n" + "#"*80)
-#     print("RUNNING PIPELINE")
-#     print("#"*80)
-#     pipeline(call_transcript, customer_profile)

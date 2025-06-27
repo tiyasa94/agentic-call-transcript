@@ -1,25 +1,29 @@
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 import litellm
 litellm._turn_on_debug()
 
+# ✅ Configure OpenRouter LLM
 llm = LLM(
-    api_key=os.getenv("WATSONX_APIKEY"),
-    model="watsonx/meta-llama/llama-3-3-70b-instruct",
-    # base_url="https://api.watsonx.ai/v1",
-	
-	base_url=os.getenv("WATSONX_URL"),
+    model="openrouter/meta-llama/llama-4-scout:free",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+    base_url="https://openrouter.ai/api/v1",
+    litellm_provider="openrouter",
     max_tokens=1000
 )
+
 
 
 @CrewBase
 class RetentionStrategyRecommenderCrew():
 	"""Sentiment Tone Analyzer Crew"""
 
-	agents_config = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/src/config/agents.yaml'
-	tasks_config = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/src/config/tasks_retention_recommender.yaml'
+	agents_config = '/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/src/config/agents.yaml'
+	tasks_config = '/Users/tiyasamukherjee/Documents/Desktop/Projects/agentic-call-transcript/src/config/tasks_retention_recommender.yaml'
 
 	@agent
 	def retention_strategy_recommender_agent(self) -> Agent:

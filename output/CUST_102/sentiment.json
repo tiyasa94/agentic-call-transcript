@@ -1,11 +1,1 @@
-{
-  "sentiment": "negative",
-  "tone": "angry",
-  "sentiment_score": -0.8,
-  "intent": "technical complaint",
-  "keywords": [
-    "internet speed",
-    "unusable",
-    "switch"
-  ]
-}
+null

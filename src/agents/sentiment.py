@@ -3,22 +3,25 @@ from crewai.project import CrewBase, agent, crew, task
 import os
 import litellm
 litellm._turn_on_debug()
+from dotenv import load_dotenv
+load_dotenv()
 
+# ✅ Configure OpenRouter LLM
 llm = LLM(
-    api_key=os.getenv("WATSONX_APIKEY"),
-    model="watsonx/meta-llama/llama-3-3-70b-instruct",
-    # base_url="https://api.watsonx.ai/v1",
-	
-	base_url=os.getenv("WATSONX_URL"),
+    model="openrouter/meta-llama/llama-4-scout:free",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+    base_url="https://openrouter.ai/api/v1",
+    litellm_provider="openrouter",
     max_tokens=1000
 )
+
 
 @CrewBase
 class SentimentToneAnalyzerCrew():
 	"""Sentiment Tone Analyzer Crew"""
 
-	agents_config = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/src/config/agents.yaml'
-	tasks_config = '/Users/tiyasamukherjee/Documents/GitHub/call_transcript_analytics/src/config/tasks_sentiment.yaml'
+	agents_config = '/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/src/config/agents.yaml'
+	tasks_config = '/Users/tiyasamukherjee/Desktop/Projects/agentic-call-transcript/src/config/tasks_sentiment.yaml'
 
 	@agent
 	def transcript_sentiment_tone_analyzer_agent(self) -> Agent:
