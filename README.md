@@ -1,4 +1,4 @@
-# Agentic Customer Churn Analyzer
+# Customer Churn Analyzer Multi-Agentic System
 
 An end-to-end AI-driven pipeline that analyzes customer service call transcripts to:
 
