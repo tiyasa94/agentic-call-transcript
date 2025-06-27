@@ -85,8 +85,7 @@ Agents and tasks are dynamically loaded from YAML files:
 ### Clone the repo
 
 ```bash
-git clone https://github.ibm.com/industry-ce-assets/call_transcript_analytics/edit/feature-churn-prediction-customer-retention.git
-cd call_transcript_analytics
+git clone 
 ```
 
 ### Installation
@@ -106,7 +105,7 @@ OPENROUTER_API_KEY=your_api_key_here
 ### Launch Streamlit
 
 ```bash
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 ---
